@@ -1,0 +1,5 @@
+type Record @model @auth(rules: [{allow: owner}]) {
+  id: ID!
+  number: Int!
+  owner: String
+}
